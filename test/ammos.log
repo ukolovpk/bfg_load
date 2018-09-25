@@ -1,0 +1,2 @@
+case_get<TAB>http://localhost:28080/rs/users/
+case_post<TAB>http://localhost:28080/rs/users/
