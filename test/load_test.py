@@ -10,12 +10,12 @@ class LoadTest(object):
     def setup(self, param):
         log.info('Starting LoadTest: %s', param)
 
-    def case_get(self, projectile):
+    def case1(self, projectile):
         with self.gun.measure('case_get'):
             log.info('Shoot! GET-method: %s', projectile)
             requests.get(projectile)
 
-    '''def case_post(self, projectile):
+    def case2(self, projectile):
         with self.gun.measure('case_post'):
             log.info('Shoot! POST-method: %s', projectile)
-            requests.post(projectile)'''
+            requests.post(projectile)
